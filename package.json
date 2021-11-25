@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/MOSS17/WebXR/issues"
   },
-  "homepage": "https://github.com/MOSS17/WebXR#readme"
+  "homepage": "https://github.com/MOSS17/WebXR#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
