@@ -1,0 +1,21 @@
+{
+  "name": "webxr-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOSS17/WebXR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MOSS17/WebXR/issues"
+  },
+  "homepage": "https://github.com/MOSS17/WebXR#readme"
+}
