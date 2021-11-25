@@ -34,21 +34,21 @@ loader.load( './models/lucario.gltf',
 
 });
 
-loader.load( './models/kids.gltf', 
- ( gltf ) => {;
+// loader.load( './models/kids.gltf', 
+//  ( gltf ) => {;
 
-  scene.add( gltf.scene );
-},
-// called while loading is progressing
-( xhr ) => {
-  console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-},
-// called when loading has errors
-( error ) => {
+//   scene.add( gltf.scene );
+// },
+// // called while loading is progressing
+// ( xhr ) => {
+//   console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+// },
+// // called when loading has errors
+// ( error ) => {
 
-  console.log( 'An error happened' );
+//   console.log( 'An error happened' );
 
-});
+// });
 
 camera.position.z = 3;
 camera.position.y = 1;
