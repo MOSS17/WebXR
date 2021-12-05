@@ -16,20 +16,21 @@ window.addEventListener('resize', onWindowResize);
 
 document.body.appendChild(VRButton.createButton(renderer));
 
-
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+// const geometry = new THREE.BoxGeometry();
+// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 //const cube = new THREE.Mesh( geometry, material );
 //scene.add( cube );
 const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 0.6 );
 scene.add( light );
 
 const loader = new GLTFLoader();
+var lucario;
 
 loader.load( './models/lucario.gltf', 
  ( gltf ) => {;
-
-  scene.add( gltf.scene );
+  lucario = gltf.scene;
+  lucario.position.z = -2;
+  scene.add( lucario );
 },
 // called while loading is progressing
 ( xhr ) => {
@@ -74,7 +75,6 @@ function animate() {
   //cube.rotation.y += 0.01;
 	// requestAnimationFrame( animate );
 	// renderer.render( scene, camera );
-
   renderer.setAnimationLoop( render );
 }
 
